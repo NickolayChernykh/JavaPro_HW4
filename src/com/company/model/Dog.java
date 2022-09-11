@@ -1,4 +1,4 @@
-package com.example;
+package com.company.model;
 
 /**
  * Created by Chernykh on 10.09.2022
@@ -7,7 +7,7 @@ public class Dog extends Animal {
 
   private final int distanceLimRun = 500;
   private final int distanceLimSwim = 10;
-  static int countDogs = 0;
+  public static int countDogs = 0;
 
 
   public Dog(String name, int age, int weight) {
@@ -16,12 +16,12 @@ public class Dog extends Animal {
   }
 
   @Override
-  void run(int distanceRunning) {
+  public void run(int distanceRunning) {
     super.run(distanceRunning);
   }
 
   @Override
-  void swim(int distance) {
+  public void swim(int distance) {
     super.swim(distance);
   }
 }
