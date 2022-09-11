@@ -4,8 +4,8 @@ package com.example;
  * Created by Chernykh on 10.09.2022
  */
 public class Cat extends Animal {
-    private final int distanceLimRunning = 200;
-    private final int distanceLimSwimming = 0;
+    private final int distanceLimRun = 200;
+    private final int distanceLimSwim = 0;
     static int countCats = 0;
 
     public Cat(String name, int age, int weight) {

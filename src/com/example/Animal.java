@@ -6,6 +6,8 @@ package com.example;
 abstract class Animal {
 
   protected static int total_countAnimal = 0;
+  private final int distanceLimRun = 0;
+  private final int distanceLimSwim = 0;
 
   public Animal(String name, int age, int weight) {
     total_countAnimal++;

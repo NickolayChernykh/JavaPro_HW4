@@ -5,8 +5,8 @@ package com.example;
  */
 public class Dog extends Animal {
 
-  private final int distanceLimRunning = 500;
-  private final int distanceLimSwimming = 10;
+  private final int distanceLimRun = 500;
+  private final int distanceLimSwim = 10;
   static int countDogs = 0;
 
 
