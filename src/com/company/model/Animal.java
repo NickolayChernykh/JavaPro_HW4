@@ -5,12 +5,16 @@ package com.company.model;
  */
 public class Animal {
 
+  private String name;
   public static int total_countAnimal = 0;
-//  private final int distanceLimRun = 0;
-//  private final int distanceLimSwim = 0;
 
-  public Animal(String name, int age, int weight) {
+  public Animal(String name) {
+    this.name = name;
     total_countAnimal++;
+  }
+
+  public String getName() {
+    return name;
   }
 
   public void run(int distance) {

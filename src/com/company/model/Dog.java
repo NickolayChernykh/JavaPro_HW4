@@ -5,23 +5,36 @@ package com.company.model;
  */
 public class Dog extends Animal {
 
-  private final int distanceLimRun = 500;
-  private final int distanceLimSwim = 10;
+  private int distanceLimRun = 500;
+  private int distanceLimSwim = 10;
+  private String breed;
   public static int countDogs = 0;
 
 
-  public Dog(String name, int age, int weight) {
-    super(name, age, weight);
+  public Dog(String name, String breed) {
+    super(name);
+    this.breed = breed;
     countDogs++;
   }
 
   @Override
   public void run(int distanceRunning) {
-    super.run(distanceRunning);
+    if (distanceRunning <= distanceLimRun) {
+      System.out.println(getName() + " пробежал " + distanceRunning + " метров");
+    } else {
+      System.out.println(getName() + " пробежал " + distanceLimRun +
+          " метров " + "и больше не смог");
+    }
   }
 
   @Override
-  public void swim(int distance) {
-    super.swim(distance);
+  public void swim(int distanceSwim) {
+    if (distanceSwim <= distanceLimSwim) {
+      System.out.println(getName() + " проплыл " + distanceSwim + " метров");
+      ;
+    } else {
+      System.out.println(getName() + " проплыл " + distanceLimSwim +
+          " метров " + "и больше не смог");
+    }
   }
 }

@@ -11,20 +11,21 @@ public class Main {
 
   public static void main(String[] args) {
 
-    Animal dog1 = new Dog("Барсик", 3, 4);
-    Dog dog2 = new Dog("Барси", 12, 22);
-    Cat cat1 = new Cat("Мурзик", 4, 6);
-    Cat cat2 = new Cat("Мурзи", 1, 4);
-    Animal animal1 = new Cat("1", 15, 4);
+    Animal dog1 = new Dog("Барсик", "pariah-dog");
+    Dog dog2 = new Dog("Стрелка", "пудель");
+    Cat cat1 = new Cat("Мурзик", "черный");
+    Cat cat2 = new Cat("Пушок", "белый");
+    Animal animal1 = new Cat("Леопольд", "рыжый");
 
     dog1.run(1000);
-    dog1.swim(500);
+    dog2.swim(500);
     cat1.run(20);
-    cat1.swim(1);
+    cat2.swim(1);
+    animal1.swim(5);
 
-    System.out.println(Animal.total_countAnimal);
-    System.out.println(Cat.countCats);
-    System.out.println(Dog.countDogs);
+    System.out.println("Количество животных " + Animal.total_countAnimal);
+    System.out.println("Количество котов " + Cat.countCats);
+    System.out.println("Количество котов " + Dog.countDogs);
 
   }
 }
