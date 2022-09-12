@@ -28,6 +28,9 @@ public class Cat extends Animal {
 
   @Override
   public void swim(int distance) {
-    System.out.println(getName() + " утонул, живодер!!!!");
+    if (distance > distanceLimSwim) {
+      System.out.println("Коты не умеют плавать!");
+      System.out.println(getName() + " утонул, живодер!!!!");
+    }
   }
 }

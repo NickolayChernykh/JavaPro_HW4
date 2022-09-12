@@ -31,7 +31,6 @@ public class Dog extends Animal {
   public void swim(int distanceSwim) {
     if (distanceSwim <= distanceLimSwim) {
       System.out.println(getName() + " проплыл " + distanceSwim + " метров");
-      ;
     } else {
       System.out.println(getName() + " проплыл " + distanceLimSwim +
           " метров " + "и больше не смог");
