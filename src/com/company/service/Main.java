@@ -23,7 +23,7 @@ public class Main {
     cat2.swim(5);
     animal1.swim(5);
 
-    System.out.println("Количество животных " + Animal.total_countAnimal);
+    System.out.println("Количество животных " + Animal.totalCountAnimal);
     System.out.println("Количество котов " + Cat.countCats);
     System.out.println("Количество собак " + Dog.countDogs);
 
